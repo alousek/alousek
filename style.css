@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bc. Aleš Topolovský - Poradenství</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Šikulka</h1>
+        <h2>Bc. Aleš Topolovský</h2>
+        <p>poradenství všeho druhu</p>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="cards">
+            <a href="poradim.html" class="card">
+                <span class="card-icon">💰</span>
+                <h3>S čím poradím</h3>
+            </a>
+            <a href="kde.html" class="card">
+                <span class="card-icon">📍</span>
+                <h3>Kde poradím</h3>
+            </a>
+            <a href="vzdelani.html" class="card">
+                <span class="card-icon">🎓</span>
+                <h3>Vzdělání</h3>
+            </a>
+            <a href="formular.html" class="card">
+                <span class="card-icon">📝</span>
+                <h3>Formulář</h3>
+            </a>
+        </div>
+
+        <div class="tree-container">
+            <!-- Elegantní SVG silueta cypřiše -->
+            <svg class="cypress-svg" viewBox="0 0 100 200">
+                <path d="M50,10 C55,30 65,60 65,90 C65,120 60,150 55,180 L52,180 L52,195 L48,195 L48,180 L45,180 C40,150 35,120 35,90 C35,60 45,30 50,10 Z" />
+                <path d="M50,25 C53,45 60,70 60,95 C60,120 57,140 53,165" fill="none" stroke="#1b6528" stroke-width="2"/>
+                <path d="M50,45 C47,65 40,90 40,115 C40,135 44,150 47,165" fill="none" stroke="#1b6528" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 Bc. Aleš Topolovský
+</footer>
+
+</body>
+</html>

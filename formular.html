@@ -1,0 +1,65 @@
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář - Bc. Aleš Topolovský</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Kontakt</h2>
+    </div>
+</header>
+
+<main>
+    <div class="form-container">
+        <h2>Formulář</h2>
+        <form action="#" method="POST" onsubmit="alert('Formulář byl úspěšně odeslán!'); return false;">
+            
+            <div class="form-group">
+                <label for="jmeno">Jméno a příjmení</label>
+                <input type="text" id="jmeno" name="jmeno" required placeholder="Jan Novák">
+            </div>
+
+            <div class="form-group">
+                <label>Jste</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="soucasny_stav" value="blecha" required>
+                        <span>a) Chudá blecha</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="soucasny_stav" value="huba">
+                        <span>b) Bohatá bílá huba</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Chcete být</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="budouci_stav" value="blecha" required>
+                        <span>a) Chudá blecha</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="budouci_stav" value="huba">
+                        <span>b) Bohatá bílá huba</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Odeslat dotazník</button>
+        </form>
+    </div>
+    <a href="index.html" class="back-btn">← Zpět na hlavní stránku</a>
+</main>
+
+<footer>
+    © 2026 Bc. Aleš Topolovský
+</footer>
+
+</body>
