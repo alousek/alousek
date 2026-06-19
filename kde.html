@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kde poradím - Bc. Aleš Topolovský</title>
-    <link href="https://fonts.googleapis.com/css2 family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Kde poradím</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo">
+<div class="bg-pattern"></div>
+<div class="web-container">
+    <section class="panel-card">
         <h2>Kde poradím</h2>
-    </div>
-</header>
-
-<main>
-    <div class="map-container">
-        <p style="margin-bottom: 1.5rem; color: #c9d1d9; text-align: center;">Působím v celém Středočeském kraji s hlavním zázemím v Praze.</p>
+        <div class="decorative-line">✦</div>
         
-        <div class="map-svg-wrap">
-            <!-- Vektorová stylizovaná mapa Středočeského kraje s Prahou uprostřed -->
-            <svg viewBox="0 0 400 300" style="width: 100%; height: auto;">
-                <!-- Středočeský kraj -->
-                <path d="M50,80 L120,40 L220,30 L320,60 L360,130 L340,220 L270,270 L160,260 L70,220 L40,140 Z" fill="#1f2937" stroke="#4b5563" stroke-width="3" />
-                <!-- Praha uprostřed -->
-                <path d="M170,120 Q200,100 220,130 Q210,160 180,150 Q160,140 170,120 Z" fill="#374151" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4" />
-                <text x="175" y="110" fill="#58a6ff" font-size="12" font-family="sans-serif" font-weight="bold">PRAHA</text>
-                
-                <!-- Červený špendlík na pozici Prahy -->
-                <g transform="translate(195, 130)">
-                    <path d="M0,0 C-5,-10 -10,-15 -10,-22 C-10,-28 -5,-32 0,-32 C5,-32 10,-28 10,-22 C10,-15 5,-10 0,0 Z" fill="#ff3838" />
-                    <circle cx="0" cy="-22" r="4" fill="#ffffff" />
-                </g>
-            </svg>
-        </div>
-    </div>
-    <a href="index.html" class="back-btn">← Zpět na hlavní stránku</a>
-</main>
-
-<footer>
-    © 2026 Bc. Aleš Topolovský
-</footer>
-
+        <svg viewBox="0 0 200 180" class="map-svg">
+            <path d="M30,50 L70,25 L130,20 L180,40 L190,90 L170,140 L130,165 L70,160 L30,130 L15,90 Z" fill="none" stroke="#ccc" stroke-width="1.5" />
+            <text x="75" y="45" class="city-txt">Mělník</text>
+            <text x="135" y="50" class="city-txt">Mladá Boleslav</text>
+            <text x="140" y="90" class="city-txt">Nymburk</text>
+            <text x="145" y="120" class="city-txt">Kolín</text>
+            <text x="110" y="155" class="city-txt">Benešov</text>
+            <text x="60" y="150" class="city-txt">Příbram</text>
+            <text x="35" y="115" class="city-txt">Beroun</text>
+            <text x="40" y="75" class="city-txt">Kladno</text>
+            
+            <circle cx="95" cy="90" r="12" fill="#f5f5f5" stroke="#999" stroke-width="1" stroke-dasharray="2 2" />
+            <text x="95" y="94" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="10" fill="#000">PRAHA</text>
+            
+            <path d="M95,90 C92,82 89,78 89,73 C89,69 92,66 95,66 C98,66 101,69 101,73 C101,78 98,82 95,90 Z" fill="#d9383a" />
+            <circle cx="95" cy="73" r="2" fill="#fff" />
+        </svg>
+        
+        <p class="panel-footer-text">Především v Praze a ve Středočeském kraji.</p>
+    </section>
+    <a href="index.html" class="back-btn">← Zpět</a>
+</div>
 </body>
 </html>

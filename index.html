@@ -3,57 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bc. Aleš Topolovský - Poradenství</title>
+    <title>Bc. Aleš Topolovský - Šikulka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo">
-        <h1>Šikulka</h1>
-        <h2>Bc. Aleš Topolovský</h2>
-        <p>poradenství všeho druhu</p>
-    </div>
-</header>
+<div class="bg-pattern"></div>
 
-<main>
-    <section class="hero">
-        <div class="cards">
-            <a href="poradim.html" class="card">
-                <span class="card-icon">💰</span>
-                <h3>S čím poradím</h3>
-            </a>
-            <a href="kde.html" class="card">
-                <span class="card-icon">📍</span>
-                <h3>Kde poradím</h3>
-            </a>
-            <a href="vzdelani.html" class="card">
-                <span class="card-icon">🎓</span>
-                <h3>Vzdělání</h3>
-            </a>
-            <a href="formular.html" class="card">
-                <span class="card-icon">📝</span>
-                <h3>Formulář</h3>
-            </a>
+<div class="web-container">
+    <header>
+        <div class="header-left">
+            <span class="sub-logo">Šikulka</span>
+            <h1>Bc. Aleš Topolovský</h1>
+            <p class="tagline">poradenství všeho druhu</p>
         </div>
-
-        <div class="tree-container">
-            <!-- Elegantní SVG silueta cypřiše -->
-            <svg class="cypress-svg" viewBox="0 0 100 200">
-                <path d="M50,10 C55,30 65,60 65,90 C65,120 60,150 55,180 L52,180 L52,195 L48,195 L48,180 L45,180 C40,150 35,120 35,90 C35,60 45,30 50,10 Z" />
-                <path d="M50,25 C53,45 60,70 60,95 C60,120 57,140 53,165" fill="none" stroke="#1b6528" stroke-width="2"/>
-                <path d="M50,45 C47,65 40,90 40,115 C40,135 44,150 47,165" fill="none" stroke="#1b6528" stroke-width="2"/>
+        <div class="header-right">
+            <svg class="cypress-main" viewBox="0 0 100 300">
+                <path d="M50,10 C53,40 65,80 65,140 C65,200 58,240 54,270 L54,290 L46,290 L46,270 C42,240 35,200 35,140 C35,80 47,40 50,10 Z" fill="#000" />
+                <path d="M10,270 Q50,265 90,270 Q50,275 10,270" fill="#000" />
             </svg>
         </div>
-    </section>
-</main>
+    </header>
 
-<footer>
-    © 2026 Bc. Aleš Topolovský
-</footer>
+    <main class="cards-grid">
+        <a href="poradim.html" class="nav-card">
+            <span class="btn-icon">💰<small style="font-size:10px">Kč</small></span> S čím poradím
+        </a>
+        <a href="kde.html" class="nav-card">
+            <span class="btn-icon">📍</span> Kde poradím
+        </a>
+        <a href="vzdelani.html" class="nav-card">
+            <span class="btn-icon">🎓</span> Vzdělání
+        </a>
+        <a href="formular.html" class="nav-card">
+            <span class="btn-icon">📝</span> Formulář
+        </a>
+    </main>
+</div>
 
 </body>
 </html>
