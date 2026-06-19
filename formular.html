@@ -1,28 +1,97 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Formulář</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Formulář</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+
 </head>
+
 <body>
-<div class="web-container" style="text-align:center;">
-    <section class="panel-card">
-        <h2>Formulář</h2>
-        <form class="profi-form" onsubmit="alert('Odesláno!'); return false;">
-            <div class="input-wrap">
-                <label>Jméno a příjmení</label>
-                <input type="text" placeholder="Zadejte své jméno" required>
-            </div>
-            <div class="input-wrap">
-                <label>Jste</label>
-                <label class="radio-lbl"><input type="radio" name="jste" required> a) Chudá blecha</label>
-                <label class="radio-lbl"><input type="radio" name="jste"> b) Bohatá bílá huba</label>
-            </div>
-            <button type="submit" class="black-btn">ODESLAT</button>
-        </form>
-    </section>
-    <a href="index.html" class="back-btn">← Zpět</a>
+
+<header>
+
+<h2>Šikulka</h2>
+
+<h1>Bc. Aleš Topolovský</h1>
+
+<p>poradenství všeho druhu</p>
+
+</header>
+
+<div class="page">
+
+<h1>Formulář</h1>
+
+<form onsubmit="odeslat(event)">
+
+<label>Jméno a příjmení</label>
+
+<input
+type="text"
+placeholder="Zadejte jméno a příjmení"
+required>
+
+<br><br>
+
+<h3>Jste</h3>
+
+<label>
+<input type="radio" name="jste">
+Chudá blecha
+</label>
+
+<label>
+<input type="radio" name="jste">
+Bohatá bílá huba
+</label>
+
+<br><br>
+
+<h3>Chcete být</h3>
+
+<label>
+<input type="radio" name="chcete">
+Chudá blecha
+</label>
+
+<label>
+<input type="radio" name="chcete">
+Bohatá bílá huba
+</label>
+
+<br><br>
+
+<button type="submit">
+
+ODESLAT
+
+</button>
+
+</form>
+
+<br>
+
+<a href="index.html" class="back">
+
+← Zpět na hlavní stránku
+
+</a>
+
 </div>
+
 </body>
+
 </html>
